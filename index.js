@@ -24,7 +24,7 @@ var increaseTimer = () => {
 
     currentTime = hour.toString().padStart(2, '0').concat(':').concat(minute.toString().padStart(2, '0').concat(':').concat(second.toString().padStart(2, '0')));
     document.querySelector(".timer-time").innerHTML = currentTime;
-    timer = setTimeout(increaseTimer, 100);
+    timer = setTimeout(increaseTimer, 1000);
 }
 
 //start timer function
